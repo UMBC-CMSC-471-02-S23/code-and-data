@@ -1575,8 +1575,3 @@ def compare_graph_searchers():
                       header=['Searcher', 'romania_map(Arad, Bucharest)',
                               'romania_map(Oradea, Neamt)', 'australia_map'])
 
-def name(obj):
-    """Try to find some reasonable name for the object."""
-    return (getattr(obj, 'name', 0) or getattr(obj, '__name__', 0) or
-            getattr(getattr(obj, '__class__', 0), '__name__', 0) or
-            str(obj))
